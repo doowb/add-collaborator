@@ -1,4 +1,4 @@
-# add-collaborator [![NPM version](https://badge.fury.io/js/add-collaborator.svg)](http://badge.fury.io/js/add-collaborator)  [![Build Status](https://travis-ci.org/doowb/add-collaborator.svg)](https://travis-ci.org/doowb/add-collaborator)
+# add-collaborator [![NPM version](https://badge.fury.io/js/add-collaborator.svg)](http://badge.fury.io/js/add-collaborator)
 
 > Add a collaborator to all of your github repositories.
 
