@@ -1,49 +1,72 @@
-# add-collaborator [![NPM version](https://badge.fury.io/js/add-collaborator.svg)](http://badge.fury.io/js/add-collaborator)  [![Build Status](https://travis-ci.org/doowb/add-collaborator.svg)](https://travis-ci.org/doowb/add-collaborator) 
+# add-collaborator [![NPM version](https://badge.fury.io/js/add-collaborator.svg)](http://badge.fury.io/js/add-collaborator)  [![Build Status](https://travis-ci.org/doowb/add-collaborator.svg)](https://travis-ci.org/doowb/add-collaborator)
 
-> Add a collaborator to all github repositories.
+> Add a collaborator to all of your github repositories.
 
-## Install with [npm](npmjs.org)
+Install with [npm](https://www.npmjs.com/)
 
-```bash
-npm i add-collaborator --save
+```sh
+$ npm i add-collaborator -g
 ```
 
 ## Usage
 
-```js
-var addCollaborator = require('add-collaborator');
+Pull down repositories.
+
+```sh
+$ add-collaborator repos
 ```
 
-## API
-<!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
+Sync collaborators with repositories
+
+```sh
+$ add-collaborator sync
+```
+
+Do both at once
+
+```sh
+$ add-collaborator repos sync
+```
+
+Force questions for github authentication and settings to be asked again
+
+```sh
+$ add-collaborator repos sync -f
+```
+
+Provide flags through the commandline to override stored settings.
+
+* `user` or `u` for github user that is the owner of the repositories
+* `collaborator` or `c` for the collaborator to add
+* `token` or `t` for github authentication token (basic github authentication is not supported through flags)
+
+```sh
+$ add-collaborator repos sync -u [username] -c [collaborator] -t [token]
+```
 
 ## Related projects
+
 <!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
 
-## Running tests
-Install dev dependencies.
-
-```bash
-npm i -d && npm test
-```
-
+* [ask-for-github-auth](https://github.com/doowb/ask-for-github-auth): Prompt a user for their github authentication credentials and save the results.
+* [composer](https://github.com/jonschlinkert/composer): The build system used to create verb, assemble and generate.
+* [github-base](https://github.com/jonschlinkert/github-base): Base methods for creating node.js apps that work with the GitHub API.
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/add-collaborator/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/add-collaborator/issues/new)
 
 ## Author
 
 **Brian Woodward**
- 
+
 + [github/doowb](https://github.com/doowb)
-+ [twitter/doowb](http://twitter.com/doowb) 
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 
